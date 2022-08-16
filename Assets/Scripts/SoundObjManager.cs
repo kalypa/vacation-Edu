@@ -260,7 +260,7 @@ public class SoundObjManager : SingleMonobehaviour<SoundObjManager>
     
     public void setFadeTo(int index, float time)
     {
-        this.setFadeIn(DataXMLManager.SoundData().GetCopy(index), time);
+       // this.setFadeIn(DataXMLManager.SoundData().GetCopy(index), time);
     }
     public void setFadeIn(SoundAttr soundAttr, float time)
     {
@@ -285,7 +285,7 @@ public class SoundObjManager : SingleMonobehaviour<SoundObjManager>
 
     public void setFadeln(int index, float time)
     {
-        this.setFadeIn(DataXMLManager.SoundData().GetCopy(index), time);
+        //this.setFadeIn(DataXMLManager.SoundData().GetCopy(index), time);
     }
     
     public void setFadeOut(float time)
@@ -314,7 +314,7 @@ public class SoundObjManager : SingleMonobehaviour<SoundObjManager>
     
     public void audioPlayByBGM(int index)
     {
-        SoundAttr soundAttr = DataXMLManager.SoundData().GetCopy(index); audioPlayByBGM(soundAttr);
+        //SoundAttr soundAttr = DataXMLManager.SoundData().GetCopy(index); audioPlayByBGM(soundAttr);
     }
     
     public void audioPlayByUl(SoundAttr soundAttr)
@@ -389,12 +389,12 @@ public class SoundObjManager : SingleMonobehaviour<SoundObjManager>
     
     public void audioPlayByEffectOnce(int index, Vector3 position, float volume)
     {
-        SoundAttr soundAttr = DataXMLManager.SoundData().GetCopy(index);
-        if (soundAttr == null)
+        //SoundAttr soundAttr = DataXMLManager.SoundData().GetCopy(index);
+        //if (soundAttr == null)
         {
             return;
         }
-        audioPlayByEffect(soundAttr, position, volume);
+        //audioPlayByEffect(soundAttr, position, volume);
 
     }
     

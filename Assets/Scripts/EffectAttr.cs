@@ -28,7 +28,7 @@ public class EffectAttr : MonoBehaviour
             this.effectObj = (GameObject)ResourceManager.Load(effectObjFullPath);
         }
     }
-
+    //프리로드한 이펙트 삭제
     public void delectEffect()
     {
         if(this.effectObj != null)
